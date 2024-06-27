@@ -1,0 +1,26 @@
+1. Install idk 17 or newer. Install Maven. Add them to environment variables.
+2. Check if idk and maven are installed using “java —version” and “mvn —version”
+3. Install eclipse IDE by visiting their website. Allow appropriate permissions for its installation.
+4. Create a new maven project in eclipse.
+5. Configure the directory, make sure to add it to project set. Proceed next.
+6. Choose Quickstart archetype by apache.maven in the given list.
+7. Give project details such as organisation id and archetype id (project-name).
+8. You’ll have the project structure on the left side of IDE.
+9. Now go to google and search for “selenium java maven dependency”. Go to maven repository url and copy the dependency code of the latest version.
+10. Do the same for chrome driver java. Add the copied code, in pom.xml file in our project.
+11. Write the test code in App.java file. Run the project as java application.
+
+
+Code: 
+
+“””
+
+	WebDriver driver = new ChromeDriver();
+	driver.get(“www.google.com”);
+	System.out.println(driver.getTitle());
+	driver.quit();
+
+	System.out.println(“Testing completed !”);
+
+
+”””
