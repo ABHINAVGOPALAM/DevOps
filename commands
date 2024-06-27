@@ -1,0 +1,45 @@
+// Docker basic commands with their application, explanation, and example
+
+// Pull an image from Docker Hub
+// docker pull <image_name>:<tag>
+// Example: docker pull nginx:latest
+
+// List all running containers
+// docker ps
+// Example: docker ps
+
+// List all containers (including stopped ones)
+// docker ps -a
+// Example: docker ps -a
+
+// Run a container from an image
+// docker run <image_name>:<tag>
+// Example: docker run nginx:latest
+
+// Stop a running container
+// docker stop <container_id>
+// Example: docker stop abcdef123456
+
+// Remove a container
+// docker rm <container_id>
+// Example: docker rm abcdef123456
+
+// Remove an image
+// docker rmi <image_name>:<tag>
+// Example: docker rmi nginx:latest
+
+// Build an image from a Dockerfile
+// docker build -t <image_name>:<tag> <path_to_dockerfile>
+// Example: docker build -t myapp:latest .
+
+// Push an image to Docker Hub
+// docker push <image_name>:<tag>
+// Example: docker push myapp:latest
+
+// Execute a command inside a running container
+// docker exec <container_id> <command>
+// Example: docker exec abcdef123456 ls
+
+// View logs of a container
+// docker logs <container_id>
+// Example: docker logs abcdef123456
